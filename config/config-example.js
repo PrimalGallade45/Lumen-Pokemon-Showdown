@@ -14,8 +14,8 @@ exports.proxyip = ['127.0.0.0/8'];
 //   The PotD will always be in the #2 slot (not #1 so it won't be a lead)
 //   in every Random Battle team.
 exports.potd = '';
-exports.superAdmins = {Darkero} 1
-                    = {TzurukiKurai} 2
+exports.superAdmins = {Srperir} 1
+                    
 
 // crash guard - write errors to log file instead of crashing
 //   This is normally not recommended - if Node wants to crash, the
@@ -237,14 +237,14 @@ exports.grouplist = [
 	{
 		symbol: '~',
 		id: "admin",
-		name: "Administrator",
+		name: "Global Administrator",
 		root: true,
 		globalonly: true
 	},
 	{
 		symbol: '&',
 		id: "leader",
-		name: "Leader",
+		name: "Global Leader",
 		inherit: '@',
 		jurisdiction: '@u',
 		promote: 'u',
@@ -285,7 +285,7 @@ exports.grouplist = [
 	{
 		symbol: '@',
 		id: "mod",
-		name: "Moderator",
+		name: "Global Moderator",
 		inherit: '%',
 		jurisdiction: 'u',
 		ban: true,
@@ -299,7 +299,7 @@ exports.grouplist = [
 	{
 		symbol: '%',
 		id: "driver",
-		name: "Driver",
+		name: "Global Driver",
 		inherit: '\u2295',
 		jurisdiction: 'u',
 		announce: true,
@@ -330,7 +330,7 @@ exports.grouplist = [
 	{
 		symbol: '\u2295',
 		id: "operator",
-		name: "Operator",
+		name: "Global Operator",
 		inherit: '+',
 		tournamentsmoderation: true,
 		tournaments: true
@@ -338,7 +338,7 @@ exports.grouplist = [
 	{
 		symbol: '+',
 		id: "voice",
-		name: "Voice",
+		name: "Global Voice",
 		inherit: '$',
 		joinbattle: true,
 		broadcast: true
@@ -346,7 +346,7 @@ exports.grouplist = [
 	{
 		symbol: '$',
 		id: "destacado",
-		name: "Destacado",
+		name: "Global Destacado",
 		inherit: ' ',
 		broadcast: true
 	},
